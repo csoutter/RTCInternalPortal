@@ -1,8 +1,13 @@
 <body class="sign_in">
     <div class="sign_in_container">
-        <!-- <img src="../assets/images/RTC_Logo_Slash.jpg" alt="RTC Logo"> -->
-        <%= image_tag("RTCLogoSlash.jpg", alt: "RTC Logo") %>
-        <h1>Welcome to the Internal Portal for Rewriting the Code</h1>
+        <div class="sign_in_pic">
+            <%= image_tag("RTCLogoSlash.jpg", alt: "RTC Logo", width: "150", height:"150") %>
+        </div>
+        <div class="sign_in_text">
+            <h1>Welcome to the Internal Portal for Rewriting the Code</h1>
+        </div>
+        <div class="clearfix"></div>
+        </br>
         <h5>Please sign in below</h5>
         <form>
             <div class="form-group">
@@ -18,9 +23,18 @@
                 <label for="exampleInputPassword1">2-Step Authentication</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Generated Password">
             </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="NDACheck">
+                <label class="form-check-label" for="NDACheck">I agree not to share any information on this site outside of RTC.</label>
+            </div>
+            </br>
             <button type="submit" class="btn btn-primary log_in">Log in</button>
         </form>
         </br>
         <p>For questions please contact <a href="">help@rewritingthecode.org</a></p>
     </div>
 </body>
+
+<script>
+    document.getElementById("NDACheck").required = true;
+</script>
