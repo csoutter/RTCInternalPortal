@@ -2,8 +2,24 @@
     <div class="sign_in_container">
         <img src="../assets/images/RTC_Logo_Slash.jpg" alt="RTC Logo">
         <h1>Welcome to the Internal Portal for Rewriting the Code</h1>
-        <h2>Please sign in below</h2>
+        <h5>Please sign in below</h5>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">Please use the email you used to apply for RTC.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">2-Step Authentication</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Generated Password">
+            </div>
+            <button type="submit" class="btn btn-primary log_in">Log in</button>
+        </form>
+        </br>
         <p>For questions please contact <a href="">help@rewritingthecode.org</a></p>
-        <p>Find me in app/views/sign_in/index.html.erb</p>
     </div>
 </body>
