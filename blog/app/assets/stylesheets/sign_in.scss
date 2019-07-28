@@ -1,3 +1,21 @@
 // Place all the styles related to the SignIn controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.sign_in {
+    color: white;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.sign_in_container {
+    width: 50vw;
+    height: 50vw;
+    // margin-top: 10vh;
+    // margin-bottom: 10vh;
+}
