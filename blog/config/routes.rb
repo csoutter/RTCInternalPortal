@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'sign_in#index'
   get 'sign_in' =>  'sign_in#index'
   resources :sign_in
 
