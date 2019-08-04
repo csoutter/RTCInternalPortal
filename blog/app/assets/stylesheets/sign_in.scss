@@ -4,8 +4,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .sign_in {
-    color: white;
-    background-color: black !important;
+    color: #E5E5E5;
+    background-color: white !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: center;
     display: flex;
@@ -16,25 +16,79 @@
 .sign_in_container {
     width: 50vw;
     height: 50vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
     // margin-top: 10vh;
     // margin-bottom: 10vh;
 }
 
-.sign_in_pic {
-    float: right;
-    width: 30%;
+.sign_in_steps {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.sign_in_text {
-    width: 70%;
-    float: left;
-    text-align: left;
+.sign_in_form {
+    width: 100%;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 50px;
+}
+
+.form-control {
+    border: 2px solid #B6B6B6;
+    border-width: 0 0 2px 0 !important;
+    border-radius: 0 !important;
+}
+
+.form-control::placeholder {
+    color: #DADADA;
 }
 
 .clearfix{
-    clear:both
+    clear: both;
 }
 
-.log_in {
-    width: 50vw;
+.sign_in_btn {
+    width: 100%;
+    background: #00AEEF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.reset-password-p {
+    margin-top: 20px;
+}
+
+.reset-password-a {
+    color: #DADADA;
+}
+
+.reset-password-a:hover {
+    color: #DADADA;
+    text-decoration: underline;
+}
+
+.account-sign-up {
+    margin-top: 100px;
+    color: #B6B6B6;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5%;
+}
+
+.account-sign-up-btn {
+    color: #58595B !important;
+}
+
+.account-sign-up-btn:hover {
+    text-decoration: underline;
 }
