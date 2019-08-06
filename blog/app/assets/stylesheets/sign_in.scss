@@ -20,9 +20,16 @@
     // margin-bottom: 10vh;
 }
 
+.sign_in_heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .sign_in_pic {
     float: right;
-    width: 30%;
+    margin-right: 20px;
 }
 
 .sign_in_text {
@@ -37,4 +44,8 @@
 
 .log_in {
     width: 50vw;
+}
+
+.reset-password:hover {
+    text-decoration: underline;
 }
