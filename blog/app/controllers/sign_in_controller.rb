@@ -1,5 +1,5 @@
 class SignInController < ApplicationController
-  def index
+  def new
   end
   def create
     @user = User.find_by_email(params[:session][:email])
@@ -7,9 +7,10 @@ class SignInController < ApplicationController
       session[:user_id] = @user.id
       redirect_to '/'
     else
-      redirect_to 'login'
+      redirect_to 'sign_in'
     end
   end
+
   def destroy
   session[:user_id] = nil
   redirect_to '/'

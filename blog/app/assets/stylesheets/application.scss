@@ -13,6 +13,54 @@
  */
 
 @import "bootstrap";
-@import "sign_in.scss";
 @import "users.scss";
+@import "sign_in.scss";
 @import "home.scss";
+// Place all the styles related to the SignIn controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.sign_up {
+    color: white;
+    background-color: black !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sign_up_container {
+    width: 50vw;
+    height: 50vw;
+    // margin-top: 10vh;
+    // margin-bottom: 10vh;
+}
+
+.sign_up_heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sign_up_pic {
+    float: right;
+    margin-right: 20px;
+}
+
+.sign_up_text {
+    width: 70%;
+    float: left;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.clearfix{
+    clear:both
+}
+
+.up {
+    width: 50vw;
+}

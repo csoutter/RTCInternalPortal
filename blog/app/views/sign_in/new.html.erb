@@ -9,6 +9,7 @@
             </div>
         </div>
         <div class="clearfix"></div>
+        <%= form_for(:session, url: login_path) do |f| %>
         <form>
             <div class="form-group">
                 <label for="email">Email Address</label>
@@ -30,6 +31,7 @@
             </br>
             <button type="submit" class="btn btn-primary log_in">Log In</button>
         </form>
+        <% end %>
         </br>
         <!--TODO: Change href for forgot password-->
         <p><a class="reset-password" href="mailto:help@rewritingthecode.org">Forgot Password?</a></p>
