@@ -20,12 +20,12 @@
                 <label for="passwordCustom">Password</label>
                 <input type="password" class="form-control" id="passwordCustom" placeholder="Password">
             </div>
-<!-- Unnecessary
-           <div class="form-group">
-                <label for="authentication">2-Step Authentication</label>
-                <input type="password" class="form-control" id="authentication" placeholder="Generated Password">
-            </div>
--->
+            <!-- Unnecessary
+                       <div class="form-group">
+                            <label for="authentication">2-Step Authentication</label>
+                            <input type="password" class="form-control" id="authentication" placeholder="Generated Password">
+                        </div>
+            -->
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="NDACheck">
                 <label class="form-check-label" for="NDACheck">I agree not to share any information on this site outside of RTC.</label>
@@ -36,7 +36,7 @@
         <% end %>
         <br>
         <!--TODO: Change href for forgot password-->
-        <p><a class="reset-password" href="mailto:help@rewritingthecode.org">Forgot Password?</a></p>
+        <%= link_to "Forgot Password?", new_password_reset_path %>
         <p>Don't Have a Profile Yet? <a class="link" href="/sign_up">Create an Account</a></p>
         <p>For questions, please contact <a href="mailto:help@rewritingthecode.org">help@rewritingthecode.org</a>.</p>
       </div>
