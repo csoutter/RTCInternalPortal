@@ -15,11 +15,11 @@
         <form>
             <div class="form-group">
                 <label for="firstName">First Name</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
             </div>
             <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
             </div>
             <div class="form-group">
                 <label for="email">Email address</label>
@@ -28,7 +28,7 @@
             </div>
             <div class="form-group">
                 <label for="passwordCustom">Password</label>
-                <input type="password" class="form-control" id="passwordCustom" placeholder="Password">
+                <input type="password" class="form-control" id="passwordCustom" placeholder="Create Password">
             </div>
             <div class="form-group">
                 <label for="authentication">2-Step Authentication</label>
@@ -48,6 +48,8 @@
 </body>
 
 <script>
+    document.getElementById("text").required = true;
+    document.getElementById("NDACheck").required = true;
     document.getElementById("NDACheck").required = true;
     document.getElementById("passwordCustom").required = true;
     document.getElementById("authentication").required = true;
