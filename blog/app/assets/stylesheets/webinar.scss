@@ -1,0 +1,16 @@
+// Place all the styles related to the webinar controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$webinar-header: #70C28D;
+$archive-header: #BED742;
+
+.webinar-container {
+    border-top: 10px;
+    border-top-color: $webinar-header;
+}
+
+.archive-container {
+    border-top: 10px;
+    border-top-color: $archive-header;
+}
