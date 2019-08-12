@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* IMPORTANT: if you're updating CSS and having trouble seeing changes, go to public, tmp and delete the assets folder. 
+                Then, clear your cache in the browser and you should see your changes. */
+
 .landing {
     color: black;
     background-color: white !important; 
@@ -84,14 +87,31 @@
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
 
+  /* This is the information for the refer button in the header; should match prototype */
   .refer {
     background-color: #00AEEF !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     padding: 9px;
-    width: 10vw;
+    width: 110px;
     font-size: 16px;
     border-radius: 12px;
     border-color: black;
     cursor: pointer;
   }
+
+  .profile {
+    background-color: slategray !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 9px;
+    width: 40px;
+    font-size: 16px;
+    border-radius: 50%;
+    border-color: black;
+    cursor: pointer;
+  }
+
+  .refer:focus, .refer:hover, .profile:focus, .profile:hover {
+    outline: none;
+  } 

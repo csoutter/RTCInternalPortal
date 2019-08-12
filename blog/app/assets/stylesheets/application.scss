@@ -12,6 +12,10 @@
  *
  */
 
+ /* IMPORTANT: if you're updating CSS and having trouble seeing changes, go to public, tmp and delete the assets folder. 
+                Then, clear your cache in the browser and you should see your changes. */
+
 @import "bootstrap";
 @import "sign_in.scss";
 @import "home.scss";
+@import "users.scss";
