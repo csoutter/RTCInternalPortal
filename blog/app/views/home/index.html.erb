@@ -39,13 +39,19 @@
 <script>
     function showAbout() {
         document.getElementById("about").classList.toggle("show");
+        document.getElementById("resources").classList.remove("show");
+        document.getElementById("directory").classList.remove("show");
     }
 
     function showResources() {
+        document.getElementById("about").classList.remove("show");
         document.getElementById("resources").classList.toggle("show");
+        document.getElementById("directory").classList.remove("show");
     }
 
     function showDirectory() {
+        document.getElementById("about").classList.remove("show");
+        document.getElementById("resources").classList.remove("show");
         document.getElementById("directory").classList.toggle("show");
     }
 
