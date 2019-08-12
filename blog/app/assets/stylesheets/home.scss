@@ -29,10 +29,10 @@
 .nav-home {
     background-color: black !important;
     color: white;
-    /*overflow: hidden;*/
     position: fixed; /* Set the navbar to fixed position */
     top: 0 !important; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    margin-bottom: 20px;
   }
 
   /* Dropdown Button */
@@ -105,7 +105,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     padding: 9px;
-    width: 40px;
+    width: 45px;
     font-size: 16px;
     border-radius: 50%;
     border-color: black;
@@ -115,3 +115,29 @@
   .refer:focus, .refer:hover, .profile:focus, .profile:hover {
     outline: none;
   } 
+
+  footer {
+      background-color: #212121;
+      position: fixed;
+      bottom:0 !important;
+      width: 100%;
+      color: white;
+      display: block;
+      padding: 15px;
+  }
+
+  a {
+      text-decoration: none;
+      color: white;
+      font-size: 12px;
+  }
+
+  a:hover {
+      text-decoration: none;
+      color: #6EC38C;
+  }
+
+  .footer-text {
+      margin: 0px;
+      padding-bottom: 0;
+  }
