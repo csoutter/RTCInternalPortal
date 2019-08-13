@@ -15,9 +15,8 @@
 
 @import "bootstrap";
 @import "sign_in.scss";
-@import "home/index.scss";
-@import "home/simple_calendar/_calendar.scss";
-@import "home/simple_calendar/_month_calendar.scss";
+@import "home.scss";
+@import "simple_calendar/_month_calendar.scss";
 @import "users.scss";
 @import "password_resets/new.scss";
 // Place all the styles related to the SignIn controller here.

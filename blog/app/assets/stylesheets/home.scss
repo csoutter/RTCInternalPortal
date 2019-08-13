@@ -11,14 +11,6 @@
     position: relative;
 }
 
-.home_text {
-    width: 50vw;
-    height: 50vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    // margin-top: 10vh;
-    // margin-bottom: 10vh;
-}
-
 .navbar {
     background-color: black !important;
 }
@@ -41,26 +33,26 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
+}
 
   /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus {
     color: #FFF200 !important;
     outline: none;
   }
 
-  button {
+button {
       outline: none;
-  }
+}
 
   /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
   }
 
   /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: black;
@@ -71,7 +63,7 @@
   }
 
   /* Links inside the dropdown */
-  .dropdown-content a {
+.dropdown-content a {
     color:white;
     padding: 12px 16px;
     text-decoration: none;
@@ -79,13 +71,13 @@
   }
 
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: white; color: black;}
+.dropdown-content a:hover {background-color: white; color: black;}
 
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+.show {display:block;}
 
   /* This is the information for the refer button in the header; should match prototype */
-  .refer {
+.refer {
     background-color: #00AEEF !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
@@ -97,7 +89,7 @@
     cursor: pointer;
   }
 
-  .profile {
+.profile {
     background-color: slategray !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
@@ -109,11 +101,11 @@
     cursor: pointer;
   }
 
-  .refer:focus, .refer:hover, .profile:focus, .profile:hover {
+.refer:focus, .refer:hover, .profile:focus, .profile:hover {
     outline: none;
   }
 
-  footer {
+footer {
       background-color: #212121;
       position: fixed;
       bottom:0 !important;
@@ -121,25 +113,25 @@
       color: white;
       display: block;
       padding: 15px;
-  }
+}
 
-  a {
+a {
       text-decoration: none;
       color: white;
       font-size: 12px;
-  }
+}
 
-  a:hover {
+a:hover {
       text-decoration: none;
       color: #6EC38C;
   }
 
-  .footer-text {
+.footer-text {
       margin: 0px;
       padding-bottom: 0;
   }
 
-  .box-title-text {
+.box-title-text {
       font-family: Roboto, sans-serif;
       font-weight: bold;
       font-size: 25.2px;
@@ -147,7 +139,7 @@
       margin-top: 15px;
       margin-bottom: 10px;
       color: #58595B;
-    }
+}
 
 .calendar-container {
 }
@@ -229,7 +221,7 @@
   margin-top: 15px;
 }
 
-    .announcement-title {
+.announcement-title {
       color: black;
       font-weight: bold;
       margin-left: 20px;
@@ -242,9 +234,9 @@
       text-overflow: ellipsis;
       line-height: 20px;
       max-height: 20px;
-    }
+}
 
-    .announcement-author {
+.announcement-author {
       color: #B6B6B6;
       margin-right: 20px;
       font-size: 14px;
@@ -252,9 +244,9 @@
       align-items: center;
       line-height: 15px;
       max-height: 15px;
-    }
+}
 
-    .announcement-author-icon {
+.announcement-author-icon {
       background-color: slategray !important;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       color: white;
@@ -266,9 +258,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    }
+}
 
-    .announcement-preview {
+.announcement-preview {
       margin-left: 20px;
       margin-top: 5px;
       margin-bottom: 5px;
@@ -282,20 +274,20 @@
       text-overflow: ellipsis;
       line-height: 16px;
       height: 32px;
-    }
+}
 
-    .announcement-date {
+.announcement-date {
       display: flex;
       justify-content: flex-end;
       color: #B6B6B6;
       font-size: 14px;
       margin-right: 20px;
-    }
+}
 
-    .main {
+.main {
       width: 100%;
       height: calc(100vh - 169px);
       display: flex;
       position: fixed;
       top: 91px;
-    }
+}
