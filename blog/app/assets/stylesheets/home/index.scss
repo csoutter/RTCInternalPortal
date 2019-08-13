@@ -1,7 +1,3 @@
-// Place all the styles related to the SignIn controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-// You can use Sass (SCSS) here: http://sass-lang.com/
 
 .landing {
     color: black;
@@ -108,7 +104,7 @@ button {
 footer {
       background-color: #212121;
       position: fixed;
-      bottom:0 !important;
+      bottom: 0% !important;
       width: 100%;
       color: white;
       display: block;
@@ -142,15 +138,20 @@ a:hover {
 }
 
 .calendar-container {
+  position: relative;
+  margin-top: 2%;
+  margin-left: 3%;
+  width: 45%;
 }
 
 .announcements-and-opportunities {
-  width: 50%;
+  width: 44%;
   justify-content: center;
 }
 
 .announcements-container {
-  width: 100%;
+  position: relative;
+  width: 120%;
   height: 50%;
   display: flex;
   justify-content: center;
@@ -158,6 +159,7 @@ a:hover {
 }
 
 .announcements-box {
+  position: relative;
   width: calc(100% - 80px);
   height: calc(100% - 80px);
   margin: 40px;
@@ -202,6 +204,7 @@ a:hover {
 }
 
 .announcement {
+  position: absolute;
   margin-bottom: 15px;
   width: calc(100% - 10px);
   position: relative;
@@ -286,8 +289,9 @@ a:hover {
 
 .main {
       width: 100%;
-      height: calc(100vh - 169px);
+      z-index: -1000;
+      height: 100vh; /* Previously: calc(100vh - 169px); */
       display: flex;
-      position: fixed;
+      position: absolute;
       top: 91px;
 }
