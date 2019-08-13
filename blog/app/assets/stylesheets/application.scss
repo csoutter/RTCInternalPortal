@@ -179,14 +179,14 @@ a:hover {
 
 .calendar-title {
   font-family: Roboto, sans-serif;
-  font-weight: lighter;
-  font-size: 40px;
+  font-weight: 100;
+  font-size: 35px;
   color: grey;
 }
 
 .calendar-container a {
   text-decoration: none;
-  color: grey;
+  color: #C6C6C6;
   font-size: 30px;
   font-weight: lighter;
   margin: 10px;
@@ -204,7 +204,7 @@ a:hover {
 .calendar-color {
   width: 100%;
   height: 17px;
-  background: green;
+  background: #71C28E;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
