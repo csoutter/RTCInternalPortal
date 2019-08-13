@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* IMPORTANT: if you're updating CSS and having trouble seeing changes, go to public, tmp and delete the assets folder. 
+                Then, clear your cache in the browser and you should see your changes. */
+
 .sign_in {
     color: white;
     background-color: black !important;
@@ -48,4 +51,9 @@
 
 .reset-password:hover {
     text-decoration: underline;
+}
+
+.sign-in-link {
+    color: #007bff !important;
+    font-size: 16px !important;
 }

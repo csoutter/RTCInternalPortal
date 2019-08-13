@@ -1,23 +1,112 @@
-<body class="home jumbotron">
-    <div class="navbar_container">
+<body class="landing">
+    <div class="navbar nav-home">
         <div class="navbar-logo">
-            <%= image_tag("RTCLogoSlash.jpg", alt: "RTC Logo", width: "150", height:"150") %>
+            <%= image_tag("RTC_Logo.png", alt: "RTC Logo", width: "200", height: "75") %>
         </div>
+        <div class="dropdown">
+            <button onclick="showAbout()" class="dropbtn">About</button>
+            <div id="about" class="dropdown-content">
+                <a href="#">Meet the Team</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Request Form</a>
+            </div>
         </div>
-        <div class="home_text">
-            <h1>YOUR PORTAL</h1>
+        <div class="dropdown">
+            <button onclick="showResources()" class="dropbtn">Resources</button>
+            <div id="resources" class="dropdown-content">
+                <a href="#">Jobs</a>
+                <a href="#">Webinars</a>
+                <a href="#">Events</a>
+                <a href="#">Mentorship</a>
+                <a href="#">Fellowship Guide</a>
+            </div>
         </div>
-        <div class="calendar-container">
-        <!--
-        -->
+        <div class="dropdown">
+            <button onclick="showDirectory()" class="dropbtn">Directory</button>
+            <div id="directory" class="dropdown-content">
+                <a href="#">Company Partners</a>
+                <a href="#">Fellows</a>
+                <a href="#">Members</a>
+                <a href="#">Alumni</a>
+            </div>
         </div>
+        <button class="refer">Refer</button>
+        <button class="profile">C</button>
+    </div>
+
+    <div class="main">
+        <div class="calendar-container"></div>
+        <div class="announcements-and-opportunities">
+            <div class="announcements-container">
+                <div class="announcements-box">
+                    <div class="announcements-color"></div>
+                    <div class="box-title-text">Announcements</div>
+                    <div class="announcements-list-container">
+                        <div class="announcements-list">
+                            <div class="announcement">
+                                <div class="announcement-content">
+                                    <div class="announcement-header">
+                                        <div class="announcement-title">New RTC Portal is out!</div>
+                                        <div class="announcement-author">
+                                            <div class="announcement-author-icon">S</div> Sue Harnett
+                                        </div>
+                                    </div>
+                                    <div class="announcement-preview">
+                                        Welcome to our new portal, where you can find information ranging from
+                                        resources to a member directory to job opportunities! Stay tuned for more
+                                        info...
+                                    </div>
+                                    <div class="announcement-date">3:42 pm - 8 July 2019</div>
+                                </div>
+                            </div>
+                            <div class="announcement">
+                            </div>
+                            <div class="announcement">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="opportunities-container">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text"><a href="www.rewritingthecode.org">rewritingthecode.org</a></p>
+        <p class="footer-text"><a href="mailto:contact@rewritingthecode.org">contact@rewritingthecode.org</a></p>
+    </footer>
 </body>
 
-<!--
 <script>
-    document.getElementById("NDACheck").required = true;
-    document.getElementById("passwordCustom").required = true;
-    document.getElementById("authentication").required = true;
-    document.getElementById("email").required = true;
+    function showAbout() {
+        document.getElementById("about").classList.toggle("show");
+        document.getElementById("resources").classList.remove("show");
+        document.getElementById("directory").classList.remove("show");
+    }
+
+    function showResources() {
+        document.getElementById("about").classList.remove("show");
+        document.getElementById("resources").classList.toggle("show");
+        document.getElementById("directory").classList.remove("show");
+    }
+
+    function showDirectory() {
+        document.getElementById("about").classList.remove("show");
+        document.getElementById("resources").classList.remove("show");
+        document.getElementById("directory").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
 </script>
--->
