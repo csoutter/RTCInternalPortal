@@ -1,0 +1,43 @@
+
+.sign_up {
+    color: white;
+    background-color: black !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sign_up_container {
+    width: 50vw;
+    height: 50vw;
+    // margin-top: 10vh;
+    // margin-bottom: 10vh;
+}
+
+.sign_up_heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sign_up_pic {
+    float: right;
+    margin-right: 20px;
+}
+
+.sign_up_text {
+    width: 70%;
+    float: left;
+    text-align: left;
+}
+
+.clearfix{
+    clear:both
+}
+
+.up {
+    width: 50vw;
+}
