@@ -128,8 +128,8 @@ button {
 
 footer {
       background-color: #212121;
-      position: absolute;
-      bottom: -20% !important;
+      position: fixed;
+      bottom: 0% !important;
       width: 100%;
       color: white;
       display: block;
@@ -229,7 +229,7 @@ a:hover {
 }
 
 .announcement {
-  position: relative;
+  position: absolute;
   margin-bottom: 15px;
   width: calc(100% - 10px);
   position: relative;
@@ -317,6 +317,6 @@ a:hover {
       z-index: -1000;
       height: 100vh; /* Previously: calc(100vh - 169px); */
       display: flex;
-      position: relative;
+      position: absolute;
       top: 91px;
 }
