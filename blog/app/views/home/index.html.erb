@@ -35,9 +35,13 @@
     </div>
     <div class="main">
       <div class="calendar-container">
-        <%= month_calendar do |date| %>
-          <%= date.day %>
-        <% end %>
+          <div class="calendar-box">
+              <div class="calendar-color"></div>
+              <div class="box-title-text">Calendar</div>
+                  <%= month_calendar do |date| %>
+                    <%= date.day %>
+                  <% end %>
+          </div>
       </div>
       <div class="announcements-and-opportunities">
           <div class="announcements-container">
