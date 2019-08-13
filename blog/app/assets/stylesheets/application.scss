@@ -292,18 +292,18 @@ a:hover {
 }
 
 .announcement-title {
-      color: black;
-      font-weight: bold;
-      margin-left: 20px;
-      font-size: 18px;
-      width: 75%;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      line-height: 20px;
-      max-height: 20px;
+  color: black;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 18px;
+  width: 75%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  max-height: 20px;
 }
 
 .announcement-author {
@@ -314,6 +314,7 @@ a:hover {
       align-items: center;
       line-height: 15px;
       max-height: 15px;
+      white-space: nowrap;
 }
 
 .announcement-author-icon {
