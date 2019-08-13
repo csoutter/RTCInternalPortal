@@ -103,8 +103,8 @@ button {
 
 footer {
       background-color: #212121;
-      position: fixed;
-      bottom: 0% !important;
+      position: relative;
+      top: calc(100vh + 110px) !important;
       width: 100%;
       color: white;
       display: block;
