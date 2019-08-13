@@ -1,26 +1,13 @@
-@@ -1,11 +1,19 @@
 // Place all the styles related to the SignIn controller here.
 // They will automatically be included in application.css.
-@@ -3,13 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.home {
-    color: white;
-    background-color: blue !important;
-<<<<<<< Updated upstream
-=======
-/* IMPORTANT: if you're updating CSS and having trouble seeing changes, go to public, tmp and delete the assets folder.
-                Then, clear your cache in the browser and you should see your changes. */
 
 .landing {
     color: black;
     background-color: white !important;
->>>>>>> Stashed changes
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    justify-content: center;
     display: flex;
-@ -13,10 +21,130 @@
     position: relative;
 }
 
@@ -28,12 +15,9 @@
     width: 50vw;
     height: 50vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-@@ -20,3 +21,123 @@
     // margin-top: 10vh;
     // margin-bottom: 10vh;
 }
-<<<<<<< Updated upstream
-=======
 
 .navbar {
     background-color: black !important;
@@ -154,4 +138,3 @@
       margin: 0px;
       padding-bottom: 0;
   }
->>>>>>> Stashed changes
