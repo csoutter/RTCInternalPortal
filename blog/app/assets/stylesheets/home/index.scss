@@ -149,86 +149,85 @@
       color: #58595B;
     }
 
-    .calendar-container {
-      width: 50%;
-    }
+.calendar-container {
+}
 
-    .announcements-and-opportunities {
-      width: 50%;
-      justify-content: center;
-    }
+.announcements-and-opportunities {
+  width: 50%;
+  justify-content: center;
+}
 
-    .announcements-container {
-      width: 100%;
-      height: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.announcements-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .announcements-box {
-      width: calc(100% - 80px);
-      height: calc(100% - 80px);
-      margin: 40px;
-      background: #F9F9F9;
-      box-shadow: -5px 5px 3px rgba(72, 72, 72, 0.2), 5px 5px 3px rgba(72, 72, 72, 0.2);
-      border-radius: 20px;
-    }
+.announcements-box {
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+  margin: 40px;
+  background: #F9F9F9;
+  box-shadow: -5px 5px 3px rgba(72, 72, 72, 0.2), 5px 5px 3px rgba(72, 72, 72, 0.2);
+  border-radius: 20px;
+}
 
-    .announcements-color {
-      width: 100%;
-      height: 17px;
-      background: #488DCB;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-    }
+.announcements-color {
+  width: 100%;
+  height: 17px;
+  background: #488DCB;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
 
-    .announcements-list-container {
-      width: 100%;
-      height: calc(100% - 100px);
-      display: flex;
-    }
+.announcements-list-container {
+  width: 100%;
+  height: calc(100% - 100px);
+  display: flex;
+}
 
-    .announcements-list {
-      display: flex;
-      flex-direction: column;
-      overflow: auto;
-      width: calc(100% - 40px);
-      height: 100%;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+.announcements-list {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: calc(100% - 40px);
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-    .announcements-list::-webkit-scrollbar {
-      -webkit-appearance: none;
-      width: 5px;
-    }
+.announcements-list::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
 
-    .announcements-list::-webkit-scrollbar-thumb {
-      border-radius: 5px;
-      background-color: rgba(0, 0, 0, 0.2);
-      box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-      }
+.announcements-list::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
 
-    .announcement {
-      margin-bottom: 15px;
-      width: calc(100% - 10px);
-      position: relative;
-      min-height: 110px;
-      background: white;
-      border: 0.5px solid #E5E5E5;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
-    }
+.announcement {
+  margin-bottom: 15px;
+  width: calc(100% - 10px);
+  position: relative;
+  min-height: 110px;
+  background: white;
+  border: 0.5px solid #E5E5E5;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
 
-    .announcement-header {
-      width: 100%;
-      display: inline-flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 15px;
-    }
+.announcement-header {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
 
     .announcement-title {
       color: black;
