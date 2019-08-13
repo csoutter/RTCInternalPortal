@@ -165,10 +165,10 @@ a:hover {
 
 .calendar-box {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 200%;
-  margin: 40px;
-  right: 10%;
+  margin: 60px;
+  right: 12%;
   margin-top: 50%;
   margin-bottom: 20%;
   transform: scale(0.9);
@@ -177,10 +177,19 @@ a:hover {
   border-radius: 20px;
 }
 
+.calendar-title {
+  font-family: Roboto, sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  color: grey;
+}
+
 .calendar-container a {
   text-decoration: none;
-  color: green;
-  font-size: 17px;
+  color: grey;
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 10px;
 }
 
 .calendar-container {
@@ -208,8 +217,9 @@ a:hover {
 .announcements-container {
   position: relative;
   width: 140%;
-  right: 35%;
+  right: 38%;
   height: 50%;
+  margin-top: -3%;
   display: flex;
   justify-content: center;
   align-items: center;
