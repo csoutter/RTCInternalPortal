@@ -14,7 +14,7 @@
 .nav-home {
     background-color: black !important;
     color: white;
-    position: absolute; /* Set the navbar to fixed position */
+    position: fixed; /* Set the navbar to fixed position */
     top: 0 !important; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     margin-bottom: 20px;
@@ -104,7 +104,7 @@ button {
 footer {
       background-color: #212121;
       position: relative;
-      top: calc(100vh + 130px) !important;
+      top: calc(100vh + 110px) !important;
       width: 100%;
       color: white;
       display: block;
@@ -140,11 +140,11 @@ a:hover {
 
 .calendar-box {
   position: relative;
-  width: 85%;
+  width: 90%;
   height: 200%;
-  margin: 65px;
-  right: 9%;
-  margin-top: 55%;
+  margin: 60px;
+  right: 12%;
+  margin-top: 50%;
   margin-bottom: 20%;
   transform: scale(0.9);
   background: #F9F9F9;

@@ -1,16 +1,20 @@
 Rails.application.routes.draw do
-  root 'sign_in#index'
-  get 'sign_in' =>  'sign_in#index'
-  resources :sign_in
-
+  get 'password_resets/new'
+  get 'password_resets/edit--no-test-framework'
+  root 'sign_in#new'
+  get 'sign_in' =>  'sign_in#new'
   get 'home' => 'home#index'
 
   get 'sign_up'  => 'users#new'
-  resources :users
 
-  get '/login' => 'sessions#new'
-  post 'login' => 'sessions#create'
-  delete 'logout' => 'sessions#destroy'
+  resources :sign_in
+  resources :users
+  resources :password_resets,     only: [:new, :create, :edit, :update]
+
+  get '/login' => 'sign_in#new'
+  post 'login' => 'sign_in#create'
+  delete 'logout' => 'sign_in#destroy'
+
 # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 end

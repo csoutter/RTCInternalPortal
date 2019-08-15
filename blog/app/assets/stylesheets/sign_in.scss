@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/* IMPORTANT: if you're updating CSS and having trouble seeing changes, go to public, tmp and delete the assets folder. 
+/* IMPORTANT: if you're updating CSS and having trouble seeing changes, go to public, tmp and delete the assets folder.
                 Then, clear your cache in the browser and you should see your changes. */
 
 .sign_in {
@@ -14,6 +14,11 @@
     display: flex;
     align-items: center;
     position: relative;
+}
+
+.sign-in-link {
+    color: #007bff !important;
+    font-size: 16px !important;
 }
 
 .sign_in_container {
@@ -39,6 +44,7 @@
     width: 70%;
     float: left;
     text-align: left;
+    text-transform: uppercase;
 }
 
 .clearfix{
