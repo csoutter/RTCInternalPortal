@@ -1,22 +1,25 @@
 <body class="sign_up jumbotron">
     <div class="sign_up_container">
-        <div class="sign_up_pic">
-            <%= image_tag("RTCLogoSlash.jpg", alt: "RTC Logo", width: "150", height:"150") %>
-        </div>
-        <div class="sign_up_text">
-            <h1>Welcome to the RTC Portal</h1>
-        </div>
+      <div class="sign_up_heading">
+          <div class="sign_up_pic">
+              <%= image_tag("RTCLogoSlash_Cropped.jpg", alt: "RTC Logo", width: "125", height:"125") %>
+          </div>
+          <div class="sign_up_text">
+              <h1>Create an Account</h1>
+          </div>
+      </div>
         <div class="clearfix"></div>
         <!--</br>
-        <h5>Please sign in below</h5>-->
+        <h5>Please sign up below</h5>-->
+        <%= form_for(@user) do |f| %>
         <form>
             <div class="form-group">
                 <label for="firstName">First Name</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
             </div>
             <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
             </div>
             <div class="form-group">
                 <label for="email">Email address</label>
@@ -25,7 +28,7 @@
             </div>
             <div class="form-group">
                 <label for="passwordCustom">Password</label>
-                <input type="password" class="form-control" id="passwordCustom" placeholder="Password">
+                <input type="password" class="form-control" id="passwordCustom" placeholder="Create Password">
             </div>
             <div class="form-group">
                 <label for="authentication">2-Step Authentication</label>
@@ -35,15 +38,18 @@
                 <input type="checkbox" class="form-check-input" id="NDACheck">
                 <label class="form-check-label" for="NDACheck">I agree not to share any information on this site outside of RTC.</label>
             </div>
-            </br>
-            <button type="submit" class="btn btn-primary sign_up">Sign Up</button>
+            <br></br>
+            <button type="submit" class="btn btn-primary up">Sign Up</button>
         </form>
-        </br>
+        <% end %>
+        <br></br>
         <p>For questions please contact <a href="mailto:help@rewritingthecode.org">help@rewritingthecode.org</a></p>
     </div>
 </body>
 
 <script>
+    document.getElementById("text").required = true;
+    document.getElementById("NDACheck").required = true;
     document.getElementById("NDACheck").required = true;
     document.getElementById("passwordCustom").required = true;
     document.getElementById("authentication").required = true;
