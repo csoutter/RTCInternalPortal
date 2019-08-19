@@ -5,6 +5,12 @@
 $webinar-header: #70C28D;
 $archive-header: #BED742;
 
+.page-container {
+    color: black;
+    background-color: white !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .webinar-container {
     border-top: 10px;
     border-top-color: $webinar-header;
