@@ -18,7 +18,6 @@
 
 @import "bootstrap";
 @import "sign_in.scss";
-@import "home/index.scss";
 @import "users.scss";
 @import "password_resets/new.scss";
 // Place all the styles related to the SignIn controller here.
@@ -168,7 +167,7 @@ a:hover {
 .calendar-box {
   position: relative;
   width: 85%;
-  height: 200%;
+  height: 100%;
   margin: 65px;
   right: 9%;
   margin-top: 55%;
@@ -218,7 +217,7 @@ a:hover {
 
 .announcements-container {
   position: relative;
-  width: 140%;
+  width: 100%;
   height: 50%;
   display: flex;
   justify-content: center;
@@ -373,7 +372,7 @@ a:hover {
 
 .jobs-container {
   position: relative;
-  width: 140%;
+  width: 100%;
   height: 58.5%;
   margin-right: 37.5%;
   bottom: 5%;
