@@ -1,7 +1,7 @@
-<body class="landing">
+<body class="events">
     <div class="navbar nav-home">
         <div class="navbar-logo">
-        <%= link_to image_tag("RTC_Logo.png", alt: "RTC Logo", width: "200", height: "75"), home_url %>
+            <%= link_to image_tag("RTC_Logo.png", alt: "RTC Logo", width: "200", height: "75"), home_url %>
         </div>
         <div class="dropdown">
             <button onclick="showAbout()" class="dropbtn">About</button>
@@ -34,52 +34,13 @@
         <button class="profile">C</button>
     </div>
     <div class="main">
-      <div class="calendar-container">
-          <div class="calendar-box">
+      <div class="calendar-container-events">
+          <div class="calendar-box-events">
               <div class="calendar-color"></div>
               <div class="box-title-text">Calendar</div>
                   <%= month_calendar do |date| %>
                     <%= date.day %>
                   <% end %>
-          </div>
-      </div>
-      <div class="announcements-and-jobs">
-          <div class="announcements-container">
-              <div class="announcements-box">
-                  <div class="announcements-color"></div>
-                  <div class="box-title-text">Announcements</div>
-                  <div class="announcements-list-container">
-                      <div class="announcements-list">
-                          <div class="announcement">
-                              <div class="announcement-content">
-                                  <div class="announcement-header">
-                                      <div class="announcement-title">New RTC Portal is out!</div>
-                                      <div class="announcement-author">
-                                          <div class="announcement-author-icon">S</div> Sue Harnett
-                                      </div>
-                                  </div>
-                                  <div class="announcement-preview">
-                                      Welcome to our new portal, where you can find information ranging from
-                                      resources to a member directory to job opportunities! Stay tuned for more
-                                      info...
-                                  </div>
-                                  <div class="announcement-date">3:42 pm - 8 July 2019</div>
-                              </div>
-                          </div>
-                          <div class="announcement">
-                          </div>
-                          <div class="announcement">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="jobs-container">
-              <div class="jobs-box">
-                  <div class="jobs-color"></div>
-                  <div class="box-title-text">Jobs</div>
-                  <div class="jobs">Coming Soon!</div>
-              </div>
           </div>
       </div>
     </div>
