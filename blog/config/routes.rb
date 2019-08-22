@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  get 'events/index'
   get 'password_resets/new'
   get 'password_resets/edit--no-test-framework'
   root 'sign_in#new'
   get 'sign_in' =>  'sign_in#new'
   get 'home' => 'home#index'
+  get 'events' => 'events'
 
   get 'sign_up'  => 'users#new'
 
