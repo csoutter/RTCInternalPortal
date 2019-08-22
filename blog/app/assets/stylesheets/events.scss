@@ -14,15 +14,16 @@
     position: relative;
 }
 
-.main {
+.main-events {
     width: 100vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 20px;
     padding-right: 20px;
-    height: calc(100vh - 169px); /* 110vh previously; Previously: calc(100vh - 169px); */
+    height: 100vh; /* 110vh previously; Previously: calc(100vh - 169px); */
     display: flex;
     position: absolute;
+    top: 15vh;
 }
 
 .calendar-box-events {
