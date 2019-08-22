@@ -18,6 +18,7 @@
 
 @import "bootstrap";
 @import "sign_in.scss";
+@import "home.scss";
 @import "users.scss";
 @import "password_resets/new.scss";
 // Place all the styles related to the SignIn controller here.
@@ -166,11 +167,11 @@ a:hover {
 
 .calendar-box {
   position: relative;
-  width: 85%;
-  height: 100%;
-  margin: 65px;
-  right: 9%;
-  margin-top: 55%;
+  width: 100%;
+  height: 210%;
+  right: 1%;
+  margin-top: 63%;
+
   margin-bottom: 20%;
   transform: scale(0.9);
   background: #F9F9F9;
@@ -211,13 +212,13 @@ a:hover {
 }
 
 .announcements-and-jobs {
-  width: 44%;
+  width: 46%;
   justify-content: center;
 }
 
 .announcements-container {
   position: relative;
-  width: 100%;
+  width: 130%;
   height: 50%;
   display: flex;
   justify-content: center;
@@ -226,9 +227,10 @@ a:hover {
 
 .announcements-box {
   position: relative;
-  width: calc(100% - 80px);
+  width: calc(110% - 80px);
   height: calc(100% - 80px);
-  margin: 40px;
+  right: 3%;
+  margin-bottom: 6%;
   background: #F9F9F9;
   box-shadow: -5px 5px 3px rgba(72, 72, 72, 0.2), 5px 5px 3px rgba(72, 72, 72, 0.2);
   border-radius: 20px;
@@ -354,28 +356,12 @@ a:hover {
       margin-right: 20px;
 }
 
-.calendar-box {
-  position: relative;
-  width: 85%;
-  height: 200%;
-  margin: 65px;
-  right: 9%;
-  margin-top: 55%;
-  margin-bottom: 20%;
-  transform: scale(0.9);
-  background: #F9F9F9;
-  box-shadow: -5px 5px 3px rgba(72, 72, 72, 0.2), 5px 5px 3px rgba(72, 72, 72, 0.2);
-  border-radius: 20px;
-}
-
-
-
 .jobs-container {
   position: relative;
-  width: 100%;
+  width: 130%;
   height: 58.5%;
-  margin-right: 37.5%;
   bottom: 5%;
+  right: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,9 +376,10 @@ a:hover {
 
 .jobs-box {
   position: relative;
-  width: calc(100% - 80px);
-  height: calc(100% - 80px);
-  margin: 30px;
+  width: calc(110% - 80px);
+  height: calc(110% - 80px);
+  left: 20%;
+  margin-bottom: 2%;
   background: #F9F9F9;
   box-shadow: -5px 5px 3px rgba(72, 72, 72, 0.2), 5px 5px 3px rgba(72, 72, 72, 0.2);
   border-radius: 20px;
@@ -419,7 +406,7 @@ a:hover {
 }
 
 .main {
-      width: 100%;
+      max-width: 89%;
       z-index: -1000;
       height: 100vh; /* Previously: calc(100vh - 169px); */
       display: flex;

@@ -1,5 +1,5 @@
 # ruby before_action :require_user, only: [:index, :show]
 class HomeController < ApplicationController
-  def index
+  def new
   end
 end
