@@ -360,7 +360,7 @@ a:hover {
 .jobs-container {
   position: relative;
   width: 130%;
-  height: 58.5%;
+  height: 55% /* previously was 58.5%; */ ;
   bottom: 5%;
   right: 30%;
   display: flex;
