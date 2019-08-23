@@ -1,0 +1,15 @@
+
+<div class="navbar nav-home">
+    <%= render 'layouts/header' %>
+</div>
+<%= yield %>
+  = simple_form_for @contact_form do |f|
+    = f.input :name, :required => true
+    = f.input :email, :required => true
+    = f.input :message, :as => :text, :required => true
+    .hidden
+      = f.input :nickname, :hint => 'Leave this field blank!'
+    = f.button :submit, 'Send Message'
+
+    <%= render 'layouts/footer' %>
+    <%= yield %>

@@ -1,58 +1,53 @@
-<div class="navbar nav-home">
-    <div class="navbar-logo">
-        <%= image_tag("RTC_Logo.png", alt: "RTC Logo", width: "200", height: "75") %>
-    </div>
-    <div class="dropdown">
-        <button onclick="showAbout()" class="dropbtn">About</button>
-        <div id="about" class="dropdown-content">
-            <a href="#">Meet the Team</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Request Form</a>
-        </div>
+<div class="navbar-logo">
+<%= link_to image_tag("RTC_Logo.png", alt: "RTC Logo", width: "200", height: "75"), home_url %>
+</div>
+<div class="dropdown">
+    <button onclick="showAbout()" class="dropbtn">About</button>
+    <div id="about" class="dropdown-content">
+        <a href="#">Meet the Team</a>
+        <a href="#">Contact Us</a>
+        <%= link_to "Request Form", contact_form_new_path %>
     </div>
 </div>
-    <div class="dropdown">
-        <button onclick="showResources()" class="dropbtn">Resources</button>
-        <div id="resources" class="dropdown-content">
-            <a href="#">Jobs</a>
-            <a href="#">Webinars</a>
-            <a href="#">Events</a>
-            <a href="#">Mentorship</a>
-            <a href="#">Fellowship Guide</a>
-        </div>
+<div class="dropdown">
+    <button onclick="showResources()" class="dropbtn">Resources</button>
+    <div id="resources" class="dropdown-content">
+        <a href="#">Jobs</a>
+        <a href="#">Webinars</a>
+        <%= link_to "Events", events_index_path %>
+        <a href="#">Mentorship</a>
+        <a href="#">Fellowship Guide</a>
     </div>
-    <div class="dropdown">
-        <button onclick="showDirectory()" class="dropbtn">Directory</button>
-        <div id="directory" class="dropdown-content">
-            <a href="#">Company Partners</a>
-            <a href="#">Fellows</a>
-            <a href="#">Members</a>
-            <a href="#">Alumni</a>
-        </div>
-    </div>
-    <button class="refer">Refer</button>
-    <button class="profile">C</button>
 </div>
+<div class="dropdown">
+    <button onclick="showDirectory()" class="dropbtn">Directory</button>
+    <div id="directory" class="dropdown-content">
+        <a href="#">Company Partners</a>
+        <a href="#">Fellows</a>
+        <a href="#">Members</a>
+        <a href="#">Alumni</a>
+    </div>
+</div>
+<button class="refer">Refer</button>
+<button class="profile">C</button>
 
 <script>
+
     function showAbout() {
         document.getElementById("about").classList.toggle("show");
         document.getElementById("resources").classList.remove("show");
         document.getElementById("directory").classList.remove("show");
     }
-
     function showResources() {
         document.getElementById("about").classList.remove("show");
         document.getElementById("resources").classList.toggle("show");
         document.getElementById("directory").classList.remove("show");
     }
-
     function showDirectory() {
         document.getElementById("about").classList.remove("show");
         document.getElementById("resources").classList.remove("show");
         document.getElementById("directory").classList.toggle("show");
     }
-
     window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
