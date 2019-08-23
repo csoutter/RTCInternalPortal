@@ -1,0 +1,47 @@
+$archive-color: #BED742;
+$webinar-color: #70C28D;
+
+.content {
+    position: absolute;
+    min-width: 89%;
+    max-width: 89%;
+    margin-top: 120px;
+}
+
+.archive-container {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+}
+
+.archive-color {
+    width: 100%;
+    height: 17px;
+    background: $archive-color;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.webinar-color {
+    width: 100%;
+    height: 17px;
+    background: $webinar-color;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.webinar-container {
+    margin-left: 50px;
+}
+
+.webinar-content {
+    margin-left: 50px;
+}
+
+.webinar-image img {
+    margin-right: 20px;
+}
+
+
+.webinar-and-archive {
+    background-color: #F9F9F9;
+}
