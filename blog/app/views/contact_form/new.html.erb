@@ -1,15 +1,17 @@
-
-<div class="navbar nav-home">
-    <%= render 'layouts/header' %>
-</div>
-<%= yield %>
-  = simple_form_for @contact_form do |f|
-    = f.input :name, :required => true
-    = f.input :email, :required => true
-    = f.input :message, :as => :text, :required => true
-    .hidden
-      = f.input :nickname, :hint => 'Leave this field blank!'
-    = f.button :submit, 'Send Message'
+<div class="contact-form">
+    <div class="navbar nav-home">
+        <%= render 'layouts/header' %>
+    </div>
+    <%= yield %>
+    <div class="form-fields">
+        <%= simple_form_for @contact_form do |f| %>
+            <%= f.input :name, :required => true, label: 'Your Name', error: 'Name is mandatory, please specify one' %>
+            <%= f.input :email, label: 'Your Email', placeholder: 'user@domain.com', :required => true %>
+            <%= f.input :message, label: 'Your Message to RTC Admin', :as => :text, :required => true %>
+            <%= f.button :submit, 'Send Message' %>
+        <% end %>
+    </div>
 
     <%= render 'layouts/footer' %>
     <%= yield %>
+</div>

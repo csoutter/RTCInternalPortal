@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   get 'sign_in' =>  'sign_in#new'
   get 'home' => 'home#index'
   get 'events' => 'events'
-  get 'contact_form' => 'contact_form/new'
 
   get 'sign_up'  => 'users#new'
 

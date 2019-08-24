@@ -48,8 +48,9 @@ gem 'jquery-rails'
 # airtable gem
 gem 'airrecord'
 
-# contact form gem
+# contact form and general form gems
 gem 'mail_form'
+gem 'simple_form'
 
 
 group :development, :test do

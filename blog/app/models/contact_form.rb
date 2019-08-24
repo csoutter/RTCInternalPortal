@@ -10,8 +10,8 @@ class ContactForm < MailForm::Base
     # in ActionMailer accepts.
     def headers
       {
-        :subject => "My Contact Form",
-        :to => "cassidysoutter@gmail.com",
+        :subject => "RTC Portal Contact Form Submission",
+        :to => "jbarecelli@rewritingthecode.org",
         :from => %("#{name}" <#{email}>)
       }
     end
