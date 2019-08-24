@@ -22,10 +22,12 @@ form {
     align-items: center;
     position: relative;
     margin-top: 20vh;
-    padding: 20px;
     transform: scale(0.9);
     background: #F9F9F9;
     box-shadow: -5px 5px 3px rgba(72, 72, 72, 0.2), 5px 5px 3px rgba(72, 72, 72, 0.2);
     border-radius: 20px;
 }
 
+.form-content {
+    padding: 20px !important;
+}
