@@ -48,6 +48,10 @@ gem 'jquery-rails'
 # airtable gem
 gem 'airrecord'
 
+# contact form and general form gems
+gem 'mail_form'
+gem 'simple_form'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

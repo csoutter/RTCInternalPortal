@@ -45,3 +45,13 @@ $webinar-color: #70C28D;
 .webinar-and-archive {
     background-color: #F9F9F9;
 }
+
+.webinar-main {
+    max-width: 89%;
+    z-index: -1000;
+    display: flex;
+    position: absolute;
+    top: 91px;
+    min-width: 89%;
+    margin-left: 5.5% /* centers main container since container is 89% width */
+}

@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'webinar/index'
+=======
+  get 'contact_form/new'
+  get 'contact_form/create'
+>>>>>>> f417fd1926c59e43b1782c4f455ba453697c1203
   get 'events/index'
   get 'password_resets/new'
   get 'password_resets/edit--no-test-framework'
@@ -13,6 +18,7 @@ Rails.application.routes.draw do
   resources :sign_in
   resources :users
   resources :password_resets,     only: [:new, :create, :edit, :update]
+  resources :contact_forms
 
   get '/login' => 'sign_in#new'
   post 'login' => 'sign_in#create'
