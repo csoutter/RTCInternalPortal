@@ -1,32 +1,50 @@
 $archive-color: #BED742;
 $webinar-color: #70C28D;
+$background-color: #F8F8F8;
 
-.content {
-    position: absolute;
-    min-width: 89%;
-    max-width: 89%;
-    margin-top: 120px;
-}
-
-.archive-container {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px; 
+.content-container {
+    margin-bottom: 25px;
+    margin-right: 15px !important;
 }
 
 .archive-color {
-    width: 100%;
-    height: 17px;
-    background: $archive-color;
+    height: 400px;
+    overflow: scroll;
+    border-top: 17px solid $archive-color;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-.webinar-color {
-    width: 100%;
-    height: 17px;
-    background: $webinar-color;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+
+.filter-text {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 12.6px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.box-title-text-margin {
+    // same as main box-title-text class except without the margin-left
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 25.2px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #58595B;
+}
+
+.video-archive {
+    height: 150px;
+    border: 1px solid #E3E3E3;
+    margin: 2px;
+    margin-bottom: 15px;
+}
+
+.video-archive-title {
+    font-weight: bold;
 }
 
 .webinar-container {
@@ -47,11 +65,22 @@ $webinar-color: #70C28D;
 }
 
 .webinar-main {
+    background-color: $background-color;
+    margin-top: 50px;
     max-width: 89%;
     z-index: -1000;
     display: flex;
     position: absolute;
     top: 91px;
     min-width: 89%;
-    margin-left: 5.5% /* centers main container since container is 89% width */
+    margin-left: 5.5%;
+    /* centers main container since container is 89% width */
+
+    // creates the top border color
+    border-top: 17px solid #70C28D;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
