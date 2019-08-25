@@ -22,6 +22,7 @@
 @import "users.scss";
 @import "password_resets/new.scss";
 @import "events.scss";
+@import "contact_form.scss";
 // Place all the styles related to the SignIn controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -33,6 +34,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     position: relative;
+    max-height: 100vh;
 }
 
 .navbar {
@@ -132,11 +134,13 @@ button {
 footer {
       background-color: #212121;
       position: relative;
-      top: calc(100vh + 130px) !important;
-      width: 100%;
+      width: 100vw;
+      height: 80px;
       color: white;
       display: block;
       padding: 15px;
+      bottom: 0;
+      top: calc(100vh + 130px) !important;
 }
 
 a {
@@ -198,7 +202,7 @@ a:hover {
 .calendar-container {
   position: relative;
   width: 80%;
-  height: 50%;
+  height: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,4 +417,5 @@ a:hover {
       display: flex;
       position: absolute;
       top: 91px;
+      padding-bottom: 80px;
 }

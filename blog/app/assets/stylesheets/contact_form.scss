@@ -1,0 +1,33 @@
+// Place all the styles related to the contact_form controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.form-fields {
+    width: 100vh;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+
+.contact-form {
+    width: 100vh;
+    // justify-content: center;
+    // align-content: center;
+    // align-items:center;
+}
+
+form {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20vh;
+    transform: scale(0.9);
+    background: #F9F9F9;
+    box-shadow: -5px 5px 3px rgba(72, 72, 72, 0.2), 5px 5px 3px rgba(72, 72, 72, 0.2);
+    border-radius: 20px;
+}
+
+.form-content {
+    padding: 20px !important;
+}
