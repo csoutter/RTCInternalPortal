@@ -8,7 +8,7 @@
             <div class="calendar-color"></div>
             <div class="box-title-text">Contact Us</div>
             <div class="form-content">
-                <%= f.input :name, :required => true, label: 'Your Name', error: 'Name is mandatory, please specify one' %>
+                <%= f.input :name, :required => true, label: 'Your Name', error: 'Name is mandatory, please specify this' %>
                 <%= f.input :email, label: 'Your Email', placeholder: 'user@domain.com', :required => true %>
                 <%= f.input :message, label: 'Your Message to RTC Admin', :as => :text, :required => true %>
                 <%= f.button :submit, 'Send Message' %>
