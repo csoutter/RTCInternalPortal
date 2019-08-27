@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'alumni/index'
+  get 'members/index'
+  get 'fellows/index'
+  get 'company_partners/index'
+  get 'jobs/index'
+  get 'jobs/individual'
+  get 'mentorship/index'
+  get 'fellowship_guide/index'
   get 'contact_form/new'
   get 'contact_form/create'
   get 'events/index'
