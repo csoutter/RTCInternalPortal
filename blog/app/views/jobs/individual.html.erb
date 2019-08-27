@@ -1,2 +1,8 @@
-<h1>Jobs#individual</h1>
-<p>Find me in app/views/jobs/individual.html.erb</p>
+<body class="jobs">
+    <div class="navbar nav-home">
+        <%= render 'layouts/header' %>
+    </div>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+    <%= yield %>
+</body>

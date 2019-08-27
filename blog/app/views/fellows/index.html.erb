@@ -1,2 +1,8 @@
-<h1>Fellows#index</h1>
-<p>Find me in app/views/fellows/index.html.erb</p>
+<body class="fellows">
+    <div class="navbar nav-home">
+        <%= render 'layouts/header' %>
+    </div>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+    <%= yield %>
+</body>

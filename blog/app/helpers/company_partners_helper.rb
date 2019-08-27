@@ -1,2 +1,2 @@
-module ComanyPartnersHelper
+module CompanyPartnersHelper
 end

@@ -1,2 +1,8 @@
-<h1>FellowshipGuide#index</h1>
-<p>Find me in app/views/fellowship_guide/index.html.erb</p>
+<body class="fellowship-guide">
+    <div class="navbar nav-home">
+        <%= render 'layouts/header' %>
+    </div>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+    <%= yield %>
+</body>
