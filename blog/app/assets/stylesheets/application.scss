@@ -22,6 +22,7 @@
 @import "users.scss";
 @import "password_resets/new.scss";
 @import "events.scss";
+@import "webinar.scss";
 @import "contact_form.scss";
 @import "alumni.scss";
 @import "company_partners.scss";
@@ -419,6 +420,10 @@ a:hover {
   border-top-right-radius: 20px;
 }
 
+
+
+
+
 .main {
       max-width: 89%;
       z-index: -1000;
@@ -428,3 +433,4 @@ a:hover {
       top: 91px;
       padding-bottom: 80px;
 }
+

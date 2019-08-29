@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'webinar/index'
   get 'alumni/index'
   get 'members/index'
   get 'fellows/index'
