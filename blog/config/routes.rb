@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   get 'webinar/index'
-=======
   get 'alumni/index'
   get 'members/index'
   get 'fellows/index'
@@ -10,7 +8,6 @@ Rails.application.routes.draw do
   get 'jobs/individual'
   get 'mentorship/index'
   get 'fellowship_guide/index'
->>>>>>> eb10621c25895e8c894a0a9b62ec7b06ab1728ff
   get 'contact_form/new'
   get 'contact_form/create'
   get 'events/index'
