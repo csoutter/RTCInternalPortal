@@ -24,6 +24,14 @@
 @import "events.scss";
 @import "webinar.scss";
 @import "contact_form.scss";
+@import "alumni.scss";
+@import "company_partners.scss";
+@import "fellows.scss";
+@import "fellowship_guide.scss";
+@import "jobs.scss";
+@import "members.scss";
+@import "mentorship.scss";
+
 // Place all the styles related to the SignIn controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -66,7 +74,7 @@
 .dropbtn:hover, .dropbtn:focus {
     color: #FFF200 !important;
     outline: none;
-  }
+}
 
 button {
       outline: none;
@@ -130,6 +138,7 @@ button {
 
 .refer:focus, .refer:hover, .profile:focus, .profile:hover {
     outline: none;
+    color: #FFF200 !important;
   }
 
 footer {
