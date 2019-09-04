@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'webinar/index'
   get 'alumni/index'
   get 'members/index'
+  get 'meet_the_team/index'
   get 'fellows/index'
   get 'company_partners/index'
   get 'jobs/index'
