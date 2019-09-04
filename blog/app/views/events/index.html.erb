@@ -1,0 +1,19 @@
+<body class="events">
+    <div class="navbar nav-home">
+        <%= render 'layouts/header' %>
+    </div>
+    <%= yield %>
+    <div class="main-events">
+      <div class="calendar-container-events">
+          <div class="calendar-box-events">
+              <div class="calendar-color"></div>
+              <div class="box-title-text">Calendar</div>
+                  <%= month_calendar do |date| %>
+                    <%= date.day %>
+                  <% end %>
+          </div>
+      </div>
+    </div>
+    <%= render 'layouts/footer' %>
+    <%= yield %>
+</body>

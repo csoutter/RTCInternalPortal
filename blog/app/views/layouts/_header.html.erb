@@ -1,0 +1,86 @@
+<div class="navbar-logo">
+<%= link_to image_tag("RTC_Logo.png", alt: "RTC Logo", width: "200", height: "75"), home_url %>
+</div>
+<div class="dropdown">
+    <button onclick="showAbout()" class="dropbtn">About</button>
+    <div id="about" class="dropdown-content">
+        <a href="#">Meet the Team</a>
+        <!--<a href="#">Contact Us</a>-->
+        <%= link_to "Contact Us", contact_form_new_path %>
+    </div>
+</div>
+<div class="dropdown">
+    <button onclick="showResources()" class="dropbtn">Resources</button>
+    <div id="resources" class="dropdown-content">
+        <%= link_to "Jobs", jobs_index_path %>
+        <a href="/webinar/index">Webinars</a>
+        <%= link_to "Events", events_index_path %>
+        <%= link_to "Mentorship", mentorship_index_path %>
+        <%= link_to "Fellowship Guide", fellowship_guide_index_path %>
+    </div>
+</div>
+<div class="dropdown">
+    <button onclick="showDirectory()" class="dropbtn">Directory</button>
+    <div id="directory" class="dropdown-content">
+        <%= link_to "Company Parthers", company_partners_index_path %>
+        <%= link_to "Fellows", fellows_index_path %>
+        <%= link_to "Members", members_index_path %>
+        <%= link_to "Alumni", alumni_index_path %>
+    </div>
+</div>
+<a href="mailto:?bcc:csoutter@live.unc.edu&subject=Rewriting%20the%20Code%20Application%20Invitation&
+body=Hi%20______**,%0d%0dI%20think%20that%20you%20would%20really%20enjoy%20joining%20the%20organization%20Rewriting%20the%20Code. 
+%20Rewriting%20the%20Code%20is%20a%20national%20nonprofit%20that%20is%20dedicated%20to%20supporting%20college%20women%20in%20technology!%20With%20over%203000%20members,%20RTC%20creates%20an%20inclusive%20environment
+%20for%20all%20women,%20as%20well%20as%20offering%20networking%20opportunities%20with%20partner%20companies,%20access%20to%20resources,%20webinars,%20and%20more!%20Below%20is%20the%20link%20to%20apply%20for%20a%20free%20membership:
+%0d%0dhttps://airtable.com/shrNUyBv2hzAMKcvV.%0d%0dPlease%20let%20me%20know%20if%20you%20have%20any%20questions%20and%20I%20hope%20you%20decide%20to%20join%20us!
+%0d%0dBest,%0d%0dYour%20Name**
+" rel="EMAIL"><button class="refer">
+    Refer</button></a>
+<div class="dropdown">
+    <button onclick="showProfileOptions()" class="profile">C</button>
+    <div id="profile" class="dropdown-content">
+        <a href="#">Profile Settings</a>
+        <a href="#">Sign Out</a>
+    </div>
+</div>
+
+
+<script>
+
+    function showAbout() {
+        document.getElementById("about").classList.toggle("show");
+        document.getElementById("resources").classList.remove("show");
+        document.getElementById("directory").classList.remove("show");
+        document.getElementById("profile").classList.remove("show");
+    }
+    function showResources() {
+        document.getElementById("about").classList.remove("show");
+        document.getElementById("resources").classList.toggle("show");
+        document.getElementById("directory").classList.remove("show");
+        document.getElementById("profile").classList.remove("show");
+    }
+    function showDirectory() {
+        document.getElementById("about").classList.remove("show");
+        document.getElementById("resources").classList.remove("show");
+        document.getElementById("directory").classList.toggle("show");
+        document.getElementById("profile").classList.remove("show");
+    }
+    function showProfileOptions() {
+        document.getElementById("about").classList.remove("show");
+        document.getElementById("resources").classList.remove("show");
+        document.getElementById("directory").classList.remove("show");
+        document.getElementById("profile").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>

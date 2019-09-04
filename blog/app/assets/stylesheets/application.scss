@@ -21,6 +21,17 @@
 @import "home.scss";
 @import "users.scss";
 @import "password_resets/new.scss";
+@import "events.scss";
+@import "webinar.scss";
+@import "contact_form.scss";
+@import "alumni.scss";
+@import "company_partners.scss";
+@import "fellows.scss";
+@import "fellowship_guide.scss";
+@import "jobs.scss";
+@import "members.scss";
+@import "mentorship.scss";
+
 // Place all the styles related to the SignIn controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -32,6 +43,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     position: relative;
+    max-height: 100vh;
 }
 
 .navbar {
@@ -62,7 +74,7 @@
 .dropbtn:hover, .dropbtn:focus {
     color: #FFF200 !important;
     outline: none;
-  }
+}
 
 button {
       outline: none;
@@ -126,16 +138,19 @@ button {
 
 .refer:focus, .refer:hover, .profile:focus, .profile:hover {
     outline: none;
+    color: #FFF200 !important;
   }
 
 footer {
       background-color: #212121;
       position: relative;
-      top: calc(100vh + 130px) !important;
-      width: 100%;
+      width: 100vw;
+      height: 80px;
       color: white;
       display: block;
       padding: 15px;
+      bottom: 0;
+      top: calc(100vh + 130px) !important;
 }
 
 a {
@@ -358,7 +373,7 @@ a:hover {
 .jobs-container {
   position: relative;
   width: 130%;
-  height: 58.5%;
+  height: 55% /* previously was 58.5%; */ ;
   bottom: 5%;
   right: 30%;
   display: flex;
@@ -404,6 +419,10 @@ a:hover {
   border-top-right-radius: 20px;
 }
 
+
+
+
+
 .main {
       max-width: 89%;
       z-index: -1000;
@@ -411,4 +430,6 @@ a:hover {
       display: flex;
       position: absolute;
       top: 91px;
+      padding-bottom: 80px;
 }
+

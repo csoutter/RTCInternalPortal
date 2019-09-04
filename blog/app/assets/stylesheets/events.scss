@@ -1,0 +1,69 @@
+// Place all the styles related to the Events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.simple-calendar .day {
+    height: 100px !important;
+}
+
+.events {
+    color: black;
+    background-color: white !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    position: relative;
+}
+
+.main-events {
+    width: 100vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80vh; /* 110vh previously; Previously: calc(100vh - 169px); */
+    display: flex;
+    position: absolute;
+    top: 5vh;
+}
+
+.calendar-box-events {
+    position: relative;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 20%;
+    right: 1%;
+    transform: scale(0.9);
+    background: #F9F9F9;
+    box-shadow: -5px 5px 3px rgba(72, 72, 72, 0.2), 5px 5px 3px rgba(72, 72, 72, 0.2);
+    border-radius: 20px;
+  }
+  
+  .calendar-title {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+    color: grey;
+  }
+  
+  .calendar-container-events a {
+    text-decoration: none;
+    color: #C6C6C6;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 10px;
+  }
+  
+  .calendar-container-events {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+  }
+  
+  .calendar-color {
+    width: 100vw;
+    height: 17px;
+    background: #71C28E;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
